@@ -1,0 +1,181 @@
+	#navbar {
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		left: 0;
+		top: 0;
+		background: #FFFFFF;
+		user-select: none;
+	}
+	.progress {
+		left: 0px;
+		top: 0px;
+		width: 1600px;
+		height: 32px;
+	}
+	#github_logo {
+		position: absolute;
+		display: inline-block;
+		top: 8px;
+		left: 97%;
+		user-select: none;
+	}
+	.navbar_buttons {
+		border-radius: 50px;
+		-moz-border-radius: 50px; 
+		-webkit-border-radius: 50px; 	
+		position: absolute;
+		display: inline-block;
+		width: 30;
+		height: 7;
+		top: 8px;
+		background-image: linear-gradient( #80ccff, #0099ff );
+		padding: 5px 10px 5px 10px;
+		font-weight: bold;
+		color: #FFFFFF;
+		cursor: pointer;
+		user-select: none;
+	}
+	#centered_box {
+		margin: auto;
+		width: 94%;
+		height: 7%;
+		position: absolute;
+		display: inline-block;
+		border-radius: 8px; 
+		-moz-border-radius: 8px; 
+		-webkit-border-radius: 8px; 
+		text-align: center;
+		left: 0;
+		right: 0;
+		bottom: 72%;
+		top: 0;
+		border: 1px solid #000000;
+		background-image: linear-gradient( #4db8ff, #0099ff );
+		color: #ffffff;
+		font-weight: bold;
+		user-select: none;
+	}
+	#dropdown_1 {
+		position: absolute;
+		display: inline-block;
+		top: 20%;
+		left: 30%;
+		width: auto;
+		min-width: auto;
+		user-select: none;
+	}
+	#dropdown_2 {
+		position: absolute;
+		display: inline-block;
+		top: 20%;
+		left: 55%;
+		width: auto;
+		min-width: auto;
+		user-select: none;
+	}
+	#dropdown_3 {
+		position: absolute;
+		display: inline-block;
+		top: 20%;
+		left: 44.3%;
+		width: auto;
+		min-width: auto;
+		user-select: none;
+	}
+	#overlay {
+		position: fixed;
+	  	display: none;
+	  	width: 100%; 
+	  	height: 92.5%; 
+	  	top: 100; 
+	  	left: 0;
+	  	right: 0;
+	  	bottom: 0;
+	  	text-align: center;
+	 	background-color: rgba(0,0,0,0.8); 
+	 	color: #ffffff;
+	  	z-index: 2;
+	  	padding: 300px 10px 5px 10px;
+	}
+	#overlay_name_text {
+	 	text-align: center;
+	 	font-weight: bold;
+	 	font-size: 32px;
+	}
+	#overlay_info {
+	 	text-align: center;
+	 	font-size: 24px;		
+	}
+	#name_dropdown {
+		border-radius: 50px;
+		-moz-border-radius: 50px; 
+		-webkit-border-radius: 50px; 	
+		background-image: linear-gradient( #4db8ff, #0099ff );
+	}
+	#name_dropdown:hover {
+		background-image: linear-gradient( #262626, #1A1A1A );
+	}
+	#surname_dropdown {
+		border-radius: 50px;
+		-moz-border-radius: 50px; 
+		-webkit-border-radius: 50px; 	
+		background-image: linear-gradient( #4db8ff, #0099ff );
+	}
+	#surname_dropdown:hover {
+		background-image: linear-gradient( #262626, #1A1A1A );
+	}
+	#gender_dropdown {
+		border-radius: 50px;
+		-moz-border-radius: 50px; 
+		-webkit-border-radius: 50px; 	
+		background-image: linear-gradient( #4db8ff, #0099ff );
+	}
+	#gender_dropdown:hover {
+		background-image: linear-gradient( #262626, #1A1A1A );
+	}
+	#generate_button {
+		border-radius: 50px;
+		-moz-border-radius: 50px; 
+		-webkit-border-radius: 50px; 	
+		position: absolute;
+		display: inline-block;
+		width: 420px;
+		height: 50px;
+		top: 30%;
+		left: 36%;
+		background-image: linear-gradient( #80ccff, #0099ff );
+		padding: 5px 10px 3px 10px;
+		font-weight: bold;
+		font-size: 150%;
+		color: #FFFFFF;
+		cursor: pointer;
+		text-align: center;
+		user-select: none;
+	}
+	#generate_button:hover {
+		border: 1px solid #0099ff;
+		background-image: linear-gradient( #262626, #1A1A1A );
+	}
+	#exit_button {
+		border-radius: 50px;
+		-moz-border-radius: 50px; 
+		-webkit-border-radius: 50px; 	
+		position: absolute;
+		display: inline-block;
+		width: 50;
+		min-width: 50;
+		height: 7;
+		top: 68%;
+		left: 47%;
+		background-image: linear-gradient( #ffb3b3, #ff0000 );
+		padding: 5px 35px 5px 35px;
+		font-weight: bold;
+		color: #FFFFFF;
+		cursor: pointer;
+		user-select: none;
+	}
+	#exit_button:hover {
+		border: 1px solid #ff0000;
+		background-image: linear-gradient( #262626, #1A1A1A );
+	}

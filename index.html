@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="props.css">
+<head lang="en-US">
+	<title>Roleplay Name Generator</title>
+ 	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- CDNs -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: linear-gradient( #262626, #1A1A1A ); margin: 0; background-repeat: no-repeat; background-attachment: fixed;">
+	<div> <!-- navbar -->
+		<div id="navbar" style="display: inline-block;"></div>
+		<div onclick="gl();" onmouseover="event_navbar_buttons( 1, true );" onmouseleave="event_navbar_buttons( 1, false );" class="navbar_buttons" id="navbar_button_1" style="left: 10px;">
+			<span>I feel lucky</span>
+		</div>
+		<a href="https://github.com/Bashovski">
+			<img id="github_logo" onmouseover="github_mouse( true );" onmouseleave="github_mouse(false);" src="github.png" alt="Github icon" width="34" height="34"></img>
+		</a>
+	</div>
+	<div class="container-"> <!-- bs4 container -->
+		<h2>.</h2>
+	  	<div class="progress" style="height: 10px; background-color: #252522">
+	  		<div class="progress-bar progress-bar-striped progress-bar-animated" id="progressbar" style="width: 0%; height: 10px;"></div>
+	  	</div>
+	</div>
+	<div id="centered_box">
+		<span>Making a new character on a roleplay SA-MP server?<br>Feel free to grab a new name for yourself by following simple steps.</span>
+	</div>
+	<!-- dropdown container -->
+	<div class="container">                            
+	  	<div class="dropdown" id="dropdown_1">
+	    	<button type="button" class="btn btn-primary dropdown-toggle" id="name_dropdown" style="width: 206px; min-width: 206px;" data-toggle="dropdown">Name (race/nationality)</button>
+		    <div class="dropdown-menu">
+		    	<button class="dropdown-item" onclick="name_assign('Arab')">Arab<br></button>
+		    	<button class="dropdown-item" onclick="name_assign('Hispanic')">Hispanic<br></button>
+		    	<button class="dropdown-item" onclick="name_assign('Mediterranean')">Mediterranean<br></button>
+		    	<button class="dropdown-item" onclick="name_assign('Slavic')">Slavic<br></button>
+		    	<button class="dropdown-item" onclick="name_assign('Chinese')">Chinese<br></button>
+		    	<button class="dropdown-item" onclick="name_assign('English')">English<br></button>
+		    	<button class="dropdown-item" onclick="name_assign('Hindu')">Hindu<br></button>
+		    </div>
+	    </div>
+	  	<div class="dropdown" id="dropdown_2">
+	    	<button type="button" class="btn btn-primary dropdown-toggle" id="surname_dropdown" style="width: 238px; min-width: 238px;" data-toggle="dropdown">Surname (region/nationality)</button>
+		    <div class="dropdown-menu">
+		    	<button class="dropdown-item" onclick="surname_assign('Anglic')">Anglic<br></button>
+		    	<button class="dropdown-item" onclick="surname_assign('Spanish')">Spanish<br></button>
+		    	<button class="dropdown-item" onclick="surname_assign('Italian')">Italian<br></button>
+		    	<button class="dropdown-item" onclick="surname_assign('Balkans')">Balkans<br></button>
+		    	<button class="dropdown-item" onclick="surname_assign('East-European')">East-European<br></button>
+		    	<button class="dropdown-item" onclick="surname_assign('Arab')">Arab<br></button>
+		    	<button class="dropdown-item" onclick="surname_assign('Chinese')">Chinese<br></button>
+		    	<button class="dropdown-item" onclick="surname_assign('Hindu')">Hindu<br></button>
+		    	<button class="dropdown-item" onclick="surname_assign('Scandinavian')">Scandinavian<br></button>
+		    </div>
+	    </div>
+	  	<div class="dropdown" id="dropdown_3">
+	    	<button type="button" class="btn btn-primary dropdown-toggle" id="gender_dropdown" style="width: 148px; min-width: 148px;" data-toggle="dropdown">Gender (Male)</button>
+		    <div class="dropdown-menu">
+		    	<button class="dropdown-item" onclick="gender_assign('male')">Male<br></button>
+		    	<button class="dropdown-item" onclick="gender_assign('Female')">Female<br></button>
+		    </div>
+	    </div>
+	</div>
+	<div id="generate_button" onclick="display_generated();">
+		<span>Generate new name</span>
+	</div>
+	<!-- overlay for generated name display -->
+	<div id="overlay">
+		<span id="overlay_name_text"></span>
+		<span id="overlay_info"></span>
+		<div id="exit_button" onclick="hide_generated();">Exit</div>
+	</div>
+</body>
+<script src="generator.js"></script>
+</html>
